@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- стилі пристосовані до цієї модалки з минулого курсу -->
-</head>
-<body>
-<button type="button" data-action="open-modal">Відкрити модалку</button>
-<div class="backdrop js-backdrop">
-  <div class="modal">
-    <h2>Modal window</h2>
-    <p>Тут буде текст модального вікна.</p>
-    <button type="button" class="button" data-action="close-modal">Закрити</button>
-  </div>
-</div>
-<script src="./style.css"></script>
-</body>
+  </head>
+  <body>
+    <button type="button" data-action="open-modal">Відкрити модалку</button>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>Тут буде текст модального вікна.</p>
+        <button type="button" class="button" data-action="close-modal">
+          Закрити
+        </button>
+      </div>
+    </div>
+    <h2>Оберіть колір фону</h2>
+    <label><input type="radio" name="color" value="red" /> Червоний </label>
+    <label><input type="radio" name="color" value="white" checked /> Білий</label>
+    <label><input type="radio" name="color" value="green" /> Зелений </label>
+    <h2>Введіть ваше ім'я</h2>
+    <input type="text" id="validation-input" placeholder="Введи 6 символів" data-length="6" />
+    <h3>Привіт, <span id="name-output">незнайомець</span>!</h3>
+    <h2>Змініть розмір тексту</h2>
+    <input id="font-size-control" type="range"/>
+    <br /><br />
+    <span id="text">Абракадабра!</span>
+    <script src="./main.js"></script>
+  </body>
 </html>

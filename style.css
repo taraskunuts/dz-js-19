@@ -26,4 +26,14 @@
 form {
   margin: 20px 0;
 }
-
+#validation-input {
+  border: 3px solid #bdbdbd;
+  padding: 5px;
+  font-size: 16px;
+}
+#validation-input.valid {
+  border-color: #4caf50;
+}
+#validation-input.invalid {
+  border-color: #f44336;
+}
